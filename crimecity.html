@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accusations d'Artistes</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css">
+</head>
+<body>
+    <h1>Tableau des Accusations d'Artistes</h1>
+    <table id="accusations-table">
+        <thead>
+            <tr>
+                <th>Nom</th>
+                <th>Liens des articles / Sources</th>
+                <th>Détails</th>
+                <th>Date des accusations</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Jean-Luc Lahaye</td>
+                <td><a href="https://www.20minutes.fr/justice/4116548-20241018-soupcons-viols-mineures-jeune-femme-accuse-jean-luc-lahaye-dit-vivre-veritable-enfer" target="_blank">Lien vers l'article</a></td>
+                <td>Accusé de viols et agressions sexuelles sur mineures (faits remontant à 2013-2014). Déjà condamné en 2015 pour corruption de mineure.</td>
+                <td>2021 (faits de 2013-2014)</td>
+            </tr>
+            <tr>
+                <td>Patrick Bruel</td>
+                <td><a href="https://www.lemonde.fr/societe/article/2021/09/03/les-enquetes-visant-patrick-bruel-pour-agression-et-harcelement-sexuel-classees-sans-suite_6093348_3224.html" target="_blank">Lien vers l'article</a></td>
+                <td>Accusé d’agressions sexuelles et d'exhibition lors de massages en 2019. Plusieurs femmes ont rapporté des comportements inappropriés. Enquêtes classées sans suite.</td>
+                <td>2019</td>
+            </tr>
+            <tr>
+                <td>Kaaris</td>
+                <td><a href="https://www.liberation.fr/societe/police-justice/le-rappeur-kaaris-relaxe-daccusations-de-violences-conjugales-20231110_57GT6GZNBREZ7NQT6HLNNLQHS4/" target="_blank">Lien vers l'article</a></td>
+                <td>Accusé de violences volontaires aggravées contre son ex-compagne. Elle rapporte des coups ayant entraîné des blessures nécessitant des soins médicaux.</td>
+                <td>2022 (faits de 2021)</td>
+            </tr>
+            <tr>
+                <td>RK</td>
+                <td><a href="https://www.ouest-france.fr/ile-de-france/meaux-77100/le-rappeur-rk-condamne-pour-violences-conjugales-en-seine-et-marne-7503925" target="_blank">Lien vers l'article</a></td>
+                <td>Condamné à six mois de prison avec sursis pour violences conjugales. La victime souffrait d’ecchymoses au visage après une dispute en 2021.</td>
+                <td>2021</td>
+            </tr>
+            <tr>
+                <td>Heuss l’Enfoiré</td>
+                <td><a href="https://www.radiofrance.fr/mouv/heuss-l-enfoire-classement-sans-suite-dans-une-affaire-de-violences-conjugales-5349637" target="_blank">Lien vers l'article</a></td>
+                <td>Accusé de violences conjugales : gifles et coups après une dispute liée à une photo intime publiée sans consentement.</td>
+                <td>2022</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script>
+        $(document).ready(function() {
+            $('#accusations-table').DataTable(); // Rendre le tableau interactif avec tri, pagination, et recherche
+        });
+    </script>
+</body>
+</html>
